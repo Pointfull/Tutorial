@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lemon clicker</title>
+        <style>
+            body {
+                font-family: Arial;
+                background-color: #edce79;
+            }
+            h1 {
+                text-align: center;
+                margin-top: 50px;
+                font-size: 100px;
+            }
+            #counter {
+                text-align: center;
+                font-size: 40px;
+                font-weight: bold;
+            }
+            #upgrade-container {
+                text-align: center;
+                margin: 20px;
+            }
+            button {
+                padding: 10px 20px;
+                font-size: 18px;
+                background-color: #d7c91d;
+                border: 2px solid #000;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+            button:hover {
+                background-color: #f0e68c;
+            }
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 300px;
+            }
+            img:hover {
+                cursor: pointer;
+                width: 310px;
+            }
+            img:active {
+                transform: scale(0.9);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Lemon clicker</h1>
+        
+        <div id="counter">
+            Lemons: <span id="lemon-count">0</span>
+        </div>
+
+        <div id="upgrade-container">
+            <button id="upgrade-btn">Buy Upgrade (100 Lemons)</button>
+            <p>Current Power: <span id="power-display">1</span></p>
+        </div>
+
+        <img id="lemonimg" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/25d45014-8cc3-4c98-b02c-5a0cf3a55ddd/datb2vn-1758ac95-09e5-433c-9092-c27f28432208.png/v1/fill/w_900,h_1158/lemon_on_a_transparent_background__by_prussiaart_datb2vn-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTE1OCIsInBhdGgiOiIvZi8yNWQ0NTAxNC04Y2MzLTRjOTgtYjAyYy01YTBjZjNhNTVkZGQvZGF0YjJ2bi0xNzU4YWM5NS0wOWU1LTQzM2MtOTA5Mi1jMjdmMjg0MzIyMDgucG5nIiwid2lkdGgiOiI8PTkwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.pGCTVaPL9lIkrygHx636wkw-25UGXygMU1nO-1O7lg0">
+        
+        <script>
+            let lemons = 0;
+            let perclick = 1;
+
+            const lemonImage = document.getElementById('lemonimg');
+            const display = document.getElementById('lemon-count');
+            const upgradeBtn = document.getElementById('upgrade-btn');
+            const powerDisplay = document.getElementById('power-display');
+
+            // Logic for clicking the lemon
+            lemonImage.onclick = function() {
+                lemons = lemons + perclick;
+                display.innerText = lemons;
+            }
+
+            // Logic for buying the upgrade
+            upgradeBtn.onclick = function() {
+                if (lemons >= 100) {
+                    lemons = lemons - 100;
+                    perclick = perclick + 1;
+                    
+                    // Update the numbers on the screen
+                    display.innerText = lemons;
+                    powerDisplay.innerText = perclick;
+                } else {
+                    // This is optional - you could show a message saying "Not enough lemons!"
+                    console.log("Not enough lemons!");
+                }
+            }
+        </script>
+    </body>
+</html>
