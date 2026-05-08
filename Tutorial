@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tutorial</title>
+        <style>
+            body {
+                font-family: Arial;
+            }
+            #header {
+                text-align: center;
+                margin-top: 25px;
+                font-size: 50px;
+                border-bottom: 5px solid black;
+                padding-bottom: 25px;
+            }
+            p {
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="header">How to make an HTML easily</h1>
+        <div id="in1">
+        <p>To start by making an HTML, write "&lt;!DOCTYPE html&gt;". This will tell the system you are using HTML5!</p>
+        <p>Under that you need to write "&lt;html&gt;". This is the root element of the html document, you need it in all your htmls.</p>
+        <p>So press [enter] again at the end of the html tag. To truly start building the HTML, we'll need a HEAD.</p>
+        <p>So type &lt;head&gt; under that html tag! The head is basically the brain of an HTML document.</p>
+        <p>Type this under the head tag: "&lt;title&gt;&lt;/title&gt;"</p>
+        <p>You see that space that the "&gt;&lt;" are pointing at? Click between those.</p>
+        <p>That little space right there that you clicked on... that's the name of your HTML! On a website, it's the name at the top of the tab.</p>
+        <p>Try naming yours "MyDocument" as a placeholder if you can't think of a name. It's a good placeholder</p>
+        <p>Directly under your title tag, place another head tag! But this time, place a little "/" before the word "Head".</p>
+        <p>It should look like this: &lt;/head&gt;</p>
+        <p>All tags have an ending, and that endings is represented by a slash!</p>
+        <p>I know it's confusing so far, I had to deal with that on my first html lesson thingy, but once you get it, it all clicks.</p>
+        <p>Now, we're going to learn a NEW tag. It's the body tag.</p>
+        <p>Type "&lt;body&gt;"</p>
+        <p>Exactly how I typed it. Tags do NOT have capital letters.</p>
+        <p>The body is basically what the user SEES ON the page. For example, the code needed for me to tell you this is in the body.</p>
+        <p>This is where the fun part begins. Type an opening and closing tag for "p"</p>
+        <p>Opening tags have "&lt;&gt;" and no slash after the first arrow. Closing tags DO have a slash.</p>
+        <p>The p you just typed stands for "Paragraph". It's what i'm using to talk to you!</p>
+        <p>We've all heard the phrase, so try typing "Hello, world!" between your paragraph tags.</p>
+        <p>But WAIT! Before you run it, do you think there's something missing?</p>
+        <p>That's right! I forgot to tell you to close the body and html tag!</p>
+        <p>type another body tag below your paragraph tag(s) with that slash we talked about: &lt;/body&gt;</p>
+        <p>Below that, do the same thing but with the html: &lt;/html&gt;</p>
+        <p>Now your code can work! That is, if you finished your paragraph already.</p>
+        <p>Are your paragraph tags seeming a bit, you know, boring? No offense, of course. To you, my friend.</p>
+        <p>Well no worries at all! We're gonna be using... drumroll, please.</p>
+        <p>Headers! The tag for these guys are "&lt;h1&gt;" to open them and "&lt;/h1&gt;" to close them.</p>
+        <p>Well of course, you can do h2 and h3, but the text gets smaller as the number goes up! Confusing, isn't it. I feel the same.</p>
+        <p>Here's another tag for you to learn, Spans! "&lt;span&gt;", as you'd probably guess.</p>
+        <p>These guys are used for targeting specific parts of the html to make it so CSS can make them stylish. How nice of them.</p>
+        <p>You may need these span tags, especially if you're making a clicker game! It's your html, though, so they're optional.</p>
+        <p>If you're surprised you can make games, you can!</p>
+        <p>But that's gonna be taught a little later, you need to learn javascript for that! Don't be intimidated, though.</p>
+        <p>Javascript is good to learn because it adds interactivity to your html!</p>
+        <p>Speaking of interactivity, I have another tag for you, and it's not some boring text.</p>
+        <p>Buttons! Buttons, buttons, buttons.</p>
+        <p>You won't NEED to create your own buttons, but you can!</p>
+        <p>And by that, I mean html already has a system where you can click and hover over it!</p>
+        <p>But it does nothing, so far. That's because we haven't made the button do anything yet!</p>
+        <p>Check this out!</p>
+        <button>Button</button>
+        <p>You can hover over it, your browser may make it change colors (it just turns a slightly darker grey), you can click it, it does nothing</p>
+        <p>Think of it as a "Skeleton" for functionality.</p>
+        <p>To make one, type &lt;button&gt;&lt;/button&gt;. The name for your button goes between those tags!</p>
+        <button>Your name here!</button>
+        <p>I know this was a short introduction, but we'll come back to this later! Before we move onto the hard stuff, we're going to learn links!</p>
+        <p>Type: &lt;a href=""&gt;&lt;/a&gt;</p>
+        <p>It may seem complex right now, but I'll explain it:</p>
+        <p>'a' stands for "Anchor", and "href" means "Hypertext Reference".</p>
+        <p>Href is where the link goes.</p>
+        <p>In between the quotes you typed, enter "https://google.com". And in between the &gt;&lt;, type "google"</p>
+        <p>This is an example link you can use. The "https://" is a requirement, so make sure to remember that!</p>
+        <p>Wait! Don't click it yet! It will take you off of the site!</p>
+        <p>If you want it to open a seperate tab to google.com, you can use this simple but useful trick:</p>
+        <p>In your &lt;a href="https://google.com"&gt;google&lt;/a&gt;, type a space after the quotes, then type "target="_blank"". This will make sure it opens a separate tab instead of opening google in this one!</p>
+        <p>Also if you did this, you created your first link! You're learning really fast.</p>
+        <p>If yours turned out right, it should look like this:</p>
+        <a href="https://google.com" target="_blank">google</a>
+        <p>Also the link turns purple when you've visited it. Just thought i'd mention that.</p>
+        <p>Just to show how much you've learned, I don’t need to explain every tag in detail anymore — I can just tell you what goes inside it. If a tag needs extra parts or attributes, I’ll still show you the exact format, no problem!<p>
+        <p>remember how I mentioned "hard stuff"? That hard stuff I talked about becomes "Easy stuff" once you've learned it</p>
+        <p>For now it's just "stuff". Somewhere in the middle, you know? It was hard stuff at the beginning, but now you're ready</p>
+        <p>SOLDIER- I mean, CODER!</p>
+        <p>This stuff will take place in the... BRRRRRRRRRRRRRRRRRRRRRRRRRRR</p>
+        <p> HEAD! </p>
+        <p>do YOU want to make your html 𝓢𝓽𝔂𝓵𝓲𝓼𝓱?</p>
+        <p>Go right back up to your html's head tag, and type &lt;style&gt; under the title!</p>
+        <p>Under that style tag, we'll put a closing one! (&lt;/style&gt;)</p>
+        <p>In BETWEEN those tags, we'll have some CSS code!</p>
+        <p>Do you not know CSS? Well, I learned mine accidentally! Maybe you will too!</p>
+        <p>Fasten your code-belt, and we'll dive right into the magical world of...</p>
+        <p> C S S . </p>
+        <p>The code here may seem unusual, but you'll get it</p>
+        <p>Try typing:</p>
+        <p> body &#123;</p>
+        <p> </p>
+        <p>&#125;</p>
+        <p>See that empty space between the curly brackets on separate rows?</p>
+        <p>You can try writing this inside: </p>
+        <p>background-color: #275a7a;</p>
+        <p>Don't worry about it being a bright color, because I chose this very specific color specifically so it doesn't hurt your eyes. It's an eye-break.</p>
+        <p>This is optional, but in a new line between the curly brackets, type:</p>
+        <p>color: white;</p>
+        <p>Think of it like this:</p>
+        <p>The HTML is describing the page, and the CSS is telling the browser how it should look.</p>
+        <p>So when you write something like "color: white;", you're changing how the text appears.</p>
+        <p>Speaking of styling things, hey, remember that button you made from a while ago?</p>
+        <p>Do you want to give yours an outline?</p>
+        <p>In CSS, we call that a border.</p>
+        <p>Create this under your style tag:<p>
+        <p> Button &#123 </p>
+        <p> </p>
+        <p>&#125;</p>
+        <p>as an example of a border, type between the curly brackets you just made:</p>
+        <p>border: 5px solid red;</p>
+        <p>Basically, 5px means the border is 5 pixels thick, solid means the border is one large solid line, and red... well, just makes it red.</p>
+        <p>If your border is glitching a bit on the button, for example, not fitting around it, use this simple fix:</p>
+        <p>display: inline-block;</p>
+        <p>Buttons are automatically classified as inline-block, and it makes sure the border fits around the inline-block.</p>
+        <p>If you want to give your border different effects other than "Solid", you can replace "Solid" with "dotted" or "dashed" to fit your preferences!</p>
+    </body>
+</html>
